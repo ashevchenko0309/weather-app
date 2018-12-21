@@ -10,8 +10,16 @@ import './App.css';
 class App extends Component {
     constructor(props){
         super(props);
-        this.state = {pressure: 970, temperature: 10, amount: [], chanceOfRain: []};
+
+
+        this.state = {
+            pressure: 970,
+            temperature: 10,
+            amount: [],
+            chanceOfRain: []};
         this.onAfterChangePressure = this.onAfterChangePressure.bind(this);
+
+
         this.onAfterChangeTemperature = this.onAfterChangeTemperature.bind(this);
     }
 
